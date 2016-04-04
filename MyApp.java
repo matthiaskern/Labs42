@@ -17,6 +17,7 @@ public class MyApp {
         System.out.println("Product value is " + product.countValue());
         product.printProduct();
         product.changeBalance(0);
+        product.changePrice(10);
         product.printProduct();
     }
 }
@@ -37,5 +38,8 @@ class Product {
     }
     public void changeBalance(int newvalue) {
         this.amount = newvalue;
+    }
+    public void changePrice(int newprice){
+        this.price = newprice ;
     }
 }
